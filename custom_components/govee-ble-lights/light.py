@@ -241,6 +241,7 @@ class GoveeBluetoothLight(LightEntity):
         if ATTR_BRIGHTNESS in kwargs:
             brightness = kwargs.get(ATTR_BRIGHTNESS, 255)
             brightness = int(brightness * 100 / 255)
+            _LOGGER.error("Brightness type: %s, value: %s", type(brightness), brightness)
             commands.append(self._prepareSinglePacketData(LedCommand.BRIGHTNESS, [brightness]))
             self._brightness = brightness
 
