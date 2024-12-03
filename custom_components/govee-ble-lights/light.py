@@ -319,5 +319,5 @@ class GoveeBluetoothLight(LightEntity):
             checksum ^= b
 
         frame += bytes([checksum & 0xFF])
-        _LOGGER.error("send: %s", frame)
+        _LOGGER.error("send: %s", frame.hex())
         return frame
