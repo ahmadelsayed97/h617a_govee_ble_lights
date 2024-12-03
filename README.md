@@ -1,4 +1,4 @@
-# Govee BLE Lighting Integration for HomeAssistant
+# H617A Govee BLE Lighting Integration for HomeAssistant
 
 ![Govee Logo](assets/govee-logo.png)
 
